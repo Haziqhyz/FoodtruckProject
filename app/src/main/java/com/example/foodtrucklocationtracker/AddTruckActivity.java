@@ -35,7 +35,7 @@ public class AddTruckActivity extends AppCompatActivity {
     }
 
     private void saveTruck() {
-        String Type = edtType.getText().toString();
+        String type = edtType.getText().toString();
         String reporter = edtReporter.getText().toString();
         String lastReported = edtLastReported.getText().toString();
 
@@ -51,7 +51,7 @@ public class AddTruckActivity extends AppCompatActivity {
         }
 
         FoodTruck truck = new FoodTruck();
-        truck.setType(Type);
+        truck.setType(type);
         truck.setReportedBy(reporter);
         truck.setLastReported(lastReported);
         truck.setLatitude(latitude);

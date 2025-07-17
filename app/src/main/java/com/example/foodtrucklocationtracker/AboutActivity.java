@@ -23,7 +23,7 @@ public class AboutActivity extends AppCompatActivity {
 
         // GitHub Link logic
         TextView githubLink = findViewById(R.id.githubLink);
-        githubLink.setOnClickListener(v -> openLink("https://github.com/haziqhayazi/food-truck-tracker")); // Ganti URL dengan repo anda
+        githubLink.setOnClickListener(v -> openLink("https://github.com/Haziqhyz/FoodtruckProject.git")); // Ganti URL dengan repo anda
     }
 
     private void openLink(String url) {

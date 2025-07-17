@@ -10,7 +10,7 @@ public class FoodTruck {
     public FoodTruck() {} // Firestore requires empty constructor
 
     public String getType() { return Type; }
-    public void setType(String type) { Type = type; }
+    public void setType(String type) { this.Type = type; }
 
     public String getReportedBy() { return reportedBy; }
     public void setReportedBy(String reportedBy) { this.reportedBy = reportedBy; }
