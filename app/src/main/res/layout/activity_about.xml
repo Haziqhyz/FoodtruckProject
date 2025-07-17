@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="?attr/colorPrimary"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp">
+
+
+        <!-- Back Button pakai gambar sendiri -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/backbutton" />
+
+        <!-- Title Center -->
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="About"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- App Logo -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo"
+                android:contentDescription="App Logo"
+                android:layout_marginBottom="16dp" />
+
+            <!-- App Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Truck Location Tracker"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- App Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This app helps you find nearby food trucks around Malaysia and allows user to manage location data easily."
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Member 1 -->
+            <ImageView
+                android:id="@+id/member1_link"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/edeen"
+                android:contentDescription="Member 1 Photo"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUHAMMAD MUHIDDIN BIN HASHIM"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023141455"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RCDCS2405B"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Member 2 -->
+            <ImageView
+                android:id="@+id/member2_link"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/haziq"
+                android:contentDescription="Member 2 Photo"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUHAMMAD HAZIQ BIN HAYAZI"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20231116297"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RCDCS2405B"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Member 3 -->
+            <ImageView
+                android:id="@+id/member3_link"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/imran"
+                android:contentDescription="Member 3 Photo"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUHAMMAD IMRAN BIN MOHD NIZAR"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023136153"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RCDCS2405B"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Member 4 -->
+            <ImageView
+                android:id="@+id/member4_link"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ammar"
+                android:contentDescription="Member 4 Photo"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMMAR IRFAN BIN IBRAHIM"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023503081"
+                android:textSize="16sp"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RCDCS2405B"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+            <!-- GitHub Link -->
+            <TextView
+                android:id="@+id/githubLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GitHub Repository"
+                android:textColor="#0000EE"
+                android:textSize="14sp"
+                android:autoLink="web"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Copyright -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2025 Food Truck Tracker - All rights reserved."
+                android:textSize="12sp"
+                android:textColor="#777777"
+                android:layout_marginBottom="24dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

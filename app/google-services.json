@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "793531785293",
+    "project_id": "foodtrucklocationtracker",
+    "storage_bucket": "foodtrucklocationtracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793531785293:android:080c40b620256d423efc04",
+        "android_client_info": {
+          "package_name": "com.example.foodtrucklocationtracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxCHmXx-2RrQoH40UsXLvy8F5bBwh1JCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
