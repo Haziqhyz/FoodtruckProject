@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login</title>
+
+  <!-- ✅ Firebase CDN (compat version) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; padding: 50px; background: #f5f5f5; }
+    .container { max-width: 400px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+    input { width: 100%; margin: 10px 0; padding: 12px; }
+    button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Login</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="error" class="error"></p>
+  </div>
+
+  <script>
+    // ✅ Your real Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyDxCHmXx-2RrQoH40UsXLvy8F5bBwh1JCg",
+      authDomain: "foodtrucklocationtracker.firebaseapp.com",
+      projectId: "foodtrucklocationtracker"
+    };
+
+    // ✅ Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    function login() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      auth.signInWithEmailAndPassword(email, password)
+        .then(() => {
+          window.location.href = "admin.html";
+        })
+        .catch((error) => {
+          document.getElementById('error').textContent = error.message;
+        });
+    }
+  </script>
+</body>
+</html>

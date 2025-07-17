@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      { "source": "/login", "destination": "/login.html" },
+      { "source": "/admin", "destination": "/admin.html" },
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "headers": [
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ]
+  }
+}
